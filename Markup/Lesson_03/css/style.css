@@ -95,7 +95,7 @@ body{
   vertical-align: middle; /*Для центрирования картинки по вертикали*/
 }
 .content p{
-  margin-left: 25px;
+  margin: 0 10px 0 25px;
   margin-bottom: 60px;
   line-height: 20px;
 }
