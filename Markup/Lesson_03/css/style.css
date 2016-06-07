@@ -1,6 +1,8 @@
 body{
   background-color: #f9f9f9;
   font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+  color: #2c2c2c;
+  font-size: 13px;
 }
 
 .wrapper{
@@ -9,6 +11,13 @@ body{
   padding: 50px 48px 60px 46px;
   margin: 0 auto;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+.header{
+  margin-bottom: 40px;
+  font-size: 0;
 }
 
 /*Стилизация верхнего горизонтального меню*/
@@ -22,8 +31,9 @@ body{
 }
 .topMenu li a{
   text-decoration: none;
+  text-shadow: 1px 1px 1px black;
   font-size: 15px;
-  padding: 0 23px;
+  padding: 0 22px;
   margin-right: 40px;
   line-height: 40px;
   display: block;
@@ -44,16 +54,17 @@ body{
   float: left;
   width: 240px;
   margin-top: 40px;
-  margin-right: 48px;
+  margin-right: 47px;
   border-left: 1px solid #c8c8c8;
   border-right: 1px solid #c8c8c8;
   border-bottom: 1px solid #c8c8c8;
+  box-sizing: border-box;
 }
 .leftMenu li{
   height: 39px;
   border-top: 1px solid #c8c8c8;
 }
-.leftMenu a{
+.leftMenu li a{
   line-height: 39px; /*Выравнивание текста ссылки по центру внутри ячейки*/
   text-decoration: none;
   padding-left: 23px;
@@ -86,7 +97,31 @@ body{
 .content p{
   margin-left: 25px;
   margin-bottom: 60px;
+  line-height: 20px;
 }
 .footer{
   clear: both;
+  background-color: #e1e1e1;
+}
+.footerMenu{
+  display: inline-block;
+}
+.footerMenu li{
+  display: inline-block;
+}
+.footerMenu li a{
+  text-decoration: none;
+  line-height: 38px;
+  padding: 0 24px;
+  margin-right: 40px;
+  color: #2c2c2c;
+}
+.footerMenu li a:hover,
+.footerMenu .active{
+  text-decoration: underline;
+}
+.footer span{
+  float: right;
+  line-height: 38px;
+  margin-right: 26px;
 }
