@@ -1,0 +1,92 @@
+body{
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+}
+
+.wrapper{
+  background-color: white;
+  width: 1060px;
+  padding: 50px 48px 60px 46px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*Стилизация верхнего горизонтального меню*/
+.topMenu{
+  font-size: 0;
+  height: 40px;
+  background-image: url(../img/panel.jpg);
+}
+.topMenu li{
+  display: inline-block;
+}
+.topMenu li a{
+  text-decoration: none;
+  font-size: 15px;
+  padding: 0 23px;
+  margin-right: 40px;
+  line-height: 40px;
+  display: block;
+  height: 40px;
+  color: #fff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.topMenu li a:hover,
+.topMenu .active{
+  border-color: #838373;
+  background-image: url(../img/link.jpg);
+}
+/*Конец стилизации верхнего горизонтального меню*/
+
+/*Стилизация левого вертикального меню*/
+.leftMenu{
+  float: left;
+  width: 240px;
+  margin-top: 40px;
+  margin-right: 48px;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+}
+.leftMenu li{
+  height: 39px;
+  border-top: 1px solid #c8c8c8;
+}
+.leftMenu a{
+  line-height: 39px; /*Выравнивание текста ссылки по центру внутри ячейки*/
+  text-decoration: none;
+  padding-left: 23px;
+  display: block; /*Чтоб ссылка занимала всю область ячейки li*/
+  color: #656363;
+}
+.leftMenu a:hover,
+.leftMenu .active{
+  background-color: #f9f9f9;
+  padding-left: 35px;
+  color: #2c2c2c;
+}
+/*Конец стилизации левого вертикального меню*/
+
+.content{
+  float: right;
+  width: 676px;
+}
+.productImage{
+  border: 1px solid #c8c8c8; /*рамка для блока с картинкой*/
+  margin: 40px 0; /*отступы для блока с картинкой*/
+  height: 400px; /*Высота блока с картинкой*/
+  text-align: center; /*Для центрирования картинки по горизонтали*/
+  line-height: 400px; /*Для центрирования картинки по вертикали*/
+  box-sizing: border-box;
+}
+.productImage img{
+  vertical-align: middle; /*Для центрирования картинки по вертикали*/
+}
+.content p{
+  margin-left: 25px;
+  margin-bottom: 60px;
+}
+.footer{
+  clear: both;
+}
