@@ -49,9 +49,10 @@ body{
 }
 /*Конец стилизации верхнего горизонтального меню*/
 
-.container{
-  position: relative;
-  overflow: hidden;
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
 }
 
 /*Стилизация левого вертикального меню*/
@@ -106,8 +107,6 @@ body{
 }
 .footer{
   background-color: #e1e1e1;
-  position: relative;
-  overflow: hidden;
 }
 .footerMenu{
   float: left;
