@@ -27,7 +27,7 @@ body{
   background-image: url(../img/panel.jpg);
 }
 .topMenu li{
-  display: inline-block;
+  float: left;
 }
 .topMenu li a{
   text-decoration: none;
@@ -48,6 +48,11 @@ body{
   background-image: url(../img/link.jpg);
 }
 /*Конец стилизации верхнего горизонтального меню*/
+
+.container{
+  position: relative;
+  overflow: hidden;
+}
 
 /*Стилизация левого вертикального меню*/
 .leftMenu{
@@ -100,20 +105,21 @@ body{
   line-height: 20px;
 }
 .footer{
-  clear: both;
   background-color: #e1e1e1;
+  position: relative;
+  overflow: hidden;
 }
 .footerMenu{
-  display: inline-block;
+  float: left;
 }
 .footerMenu li{
-  display: inline-block;
+  float: left;
 }
 .footerMenu li a{
   text-decoration: none;
   line-height: 38px;
   padding: 0 24px;
-  margin-right: 40px;
+  margin-right: 44px;
   color: #2c2c2c;
 }
 .footerMenu li a:hover,
