@@ -1,0 +1,53 @@
+body{
+  background: black;
+  color: #e6e6e6;
+}
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+.wrapper{
+  background: url(../img/background.jpg);
+  width: 960px;
+  height: 883px;
+  margin: 25px auto;
+  padding: 0 70px;
+  box-sizing: border-box;
+}
+.header{
+  position: relative;
+}
+.logo{
+  position: relative;
+  float: left;
+  /*background-color: green;*/
+}
+.logo p{
+  margin-top: 177px;
+  margin-left: 85px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.logoImage{
+  position: absolute;
+  margin-top: 132px;
+}
+.palmTreeImage{
+  position: absolute;
+  margin-top: 57px;
+  margin-left: 142px;
+}
+.contacts{
+  position: absolute;
+  right: 10px;
+  margin-top: 150px;
+}
+.contacts p:first-child{
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 16px;
+}
+.contacts p{
+  font-size: 9px;
+}
